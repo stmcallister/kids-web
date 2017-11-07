@@ -1,6 +1,6 @@
-#Kids Web
+# Kids Web
 ## Lesson 1
-*Objectives:* 
+**Objectives:** 
     * Introduce concepts of what the Internet is -- a collection of connected computers that are networked together
     * Everything on the network has an address that tells us where to find it
     * Web pages -- special files on those computers that contain permissions for you to view them
