@@ -1,5 +1,5 @@
 # Kids Web
-## Lesson 1
+## Lesson 1: Intro to HTML
 Objectives:
 * Introduce concepts of what the Internet is -- a collection of connected computers that are networked together
 * Everything on the network has an address that tells us where to find it
