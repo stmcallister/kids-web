@@ -16,16 +16,23 @@
 * positioning
 
 #### Style Rules
-CSS is a list of "style rules". Each style rule consists of a "selector" and "declarations" of property-value pairs:
+CSS is a list of "style rules". Each style rule consists of a "selector" and "declarations" of property-value
+
+pairs:
 
     selector {
         property: value;
         property: value;
     }
-    
+
     body {
         color: yellow;
         background-color: black;
     }
+
+### Example and Excercise
+* Size, Color, and position
+* Ids and Classes
+
 
 WIP
