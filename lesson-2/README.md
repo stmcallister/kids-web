@@ -1,6 +1,9 @@
 # Kids Web
 ## Lesson 2: Intro to CSS
 
+### Slides
+For this lesson we used [slides](slides/class2.html) that were found on the [Girl Develop It San Francisco - Teaching Materials](https://www.teaching-materials.org/) site. The site looks like a great resource of web development teaching materials.
+
 ### HTML & CSS
 * HTML: Gives your page structure
 * CSS: Makes your page pretty
@@ -32,7 +35,4 @@ pairs:
 
 ### Example and Excercise
 * Size, Color, and position
-* Ids and Classes
-
-
-WIP
+* moana.html

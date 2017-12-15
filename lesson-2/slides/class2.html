@@ -1,0 +1,409 @@
+<!doctype html> 
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Class 2 ~ HTML/CSS 2-Day ~ Girl Develop It</title>
+
+    <meta name="description" content="An introduction to HTML & CSS presented in two, 6-hour sessions.">
+    <meta name="author" content="Girl Develop It San Francisco">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="../common/css/reveal.css">
+    <link rel="stylesheet" href="../common/css/gdilight.css" id="theme">
+
+    <!--Adapting the 2-column style from national slides-->
+    <style>
+      .flex-container {
+        display: flex;
+      }
+      .flex-item {
+        flex-basis: 50%;
+      }
+    </style>
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="../common/css/editor/dark.css">
+
+    <!-- If use the PDF print sheet so students can print slides-->
+
+    <link rel="stylesheet" href="../common/css/print/pdf.css" type="text/css" media="print">
+    <link rel="icon" type="image/x-icon" href="../common/favicon.ico" />
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Mrs. Friedman's Third Grade HTML/CSS</h1>
+          <h2>Lesson 2</h2>
+        </section>
+
+        <!-- Check for Understanding 1 -->
+        <section>
+          <h3>Review</h3>
+          <p>What are a few different HTML tags?</p>
+        </section>
+
+        <!-- Check for Understanding -->
+        <section>
+          <h3>Review</h3>
+          <p>Which tag is used to create a link to another page?</p>
+          <ol>
+            <li><code>&lt;p&gt;</code></li>
+            <li><code>&lt;link&gt;</code></li>
+            <li><code>&lt;a&gt;</code></li>
+            <li><code>&lt;america&gt;</code></li>
+          </ol>
+          <div class="fragment blue">Answer: <code>&lt;a&gt;</code></div>
+        </section>
+
+        <!-- Check for Understanding-->
+        <section>
+          <h3>Review</h3>
+          <p>What are the two tags that nest directly within the <code>&lt;html&gt;</code> tags?</p>
+          <div class="fragment blue">Answer: <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code></div>
+        </section>
+
+        <!-- Check for Understanding -->
+        <section>
+          <h3>Review</h3>
+          <p>What is a relative versus absolute path?</p>
+        </section>
+
+        <section>
+          <h3>What makes up a website?</h3>
+          <pre style="font-size:.7em">
+            <strong>Content</strong>: Text, Images, Video<br />
+            <strong>+  HTML</strong>: Structure<br />
+            <strong>+   CSS</strong>: Presentation + Design<br />
+            <strong>+    JS</strong>: Interactivity<br />
+            <strong>= Your Website</strong>
+          </pre>
+          <p>A website is a way to present your content to the world, using HTML and CSS to present that content &amp; make it look good.</p>
+        </section>
+
+
+        <!-- What is CSS-->
+        <section>
+          <h3>CSS: What is it?</h3>
+          <p><strong>CSS</strong> = <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets</p>
+          <p>CSS is a "style sheet language" that lets you style the elements on your page.</p>
+          <p>CSS is works in conjunction with HTML, but is not HTML itself.</p>
+        </section>
+
+        <section>
+          <h3>CSS: What can it do?</h3>
+          <p>All colored text, position, and size</p>
+          <img src = "img/homepage-view.png" alt="Screenshot of homepage" height="400">
+          <p><small><a href="http://www.csszengarden.com/" target="_blank">More examples: CSS Zen Garden</a></small></p>
+
+          <aside class="notes">Open girldevelopit.com, delete CSS from it, show what happens</aside>
+        </section>
+
+        <!-- The CSS Rule-->
+        <section>
+          <h3>What CSS Looks Like</h3>
+ 	        <p>CSS consists of <strong>style rules</strong>. Each style rule consists of a <strong>selector</strong> and
+         <strong>declarations</strong> of <strong>property-value</strong> pairs:</p>
+	 <pre><code class="css">selector {
+  property: value;
+  property: value;
+}</code></pre>
+        <p>For example:</p>
+	<pre><code class="css">body {
+  color: yellow;
+  background-color: black;
+}</code></pre>
+        </section>
+
+        <!-- Connecting HTML to CSS-->
+        <section>
+          <h3>Connecting CSS to HTML</h3>
+          <p class = "green">3 ways</p>
+          <p>"Inline"</p>
+          <p>"Embedded"</p>
+          <p>"External"</p>
+        </section>
+
+        <!-- Inline -->
+        <section>
+          <h3>Connecting CSS to HTML: Inline</h3>
+<pre><code class = "html">&lt;p style="color:red"&gt;Some text.&lt;/p&gt;
+</code></pre>
+          <ul>
+            <li>Uses the HTML <code>style</code> attribute.</li>
+            <li>Only applies to one element at a time.</li>
+            <li>Not preferred.</li>
+          </ul>
+        </section>
+
+        <!-- Embedded -->
+        <section>
+          <h3>Connecting CSS to HTML: Embedded</h3>
+<pre><code class = "html">&lt;head&gt;
+  &lt;style&gt;
+    p {
+      color: blue;
+      font-size: 12px;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+</code></pre>
+          <ul>
+            <li>Inside <code>&lt;head&gt;</code> element.</li>
+            <li>Uses <code>&lt;style&gt;</code> tag.</li>
+            <li>Only applies to that page.</li>
+          </ul>
+        </section>
+
+        <!-- External-->
+        <section>
+          <h3>Connecting CSS to HTML: External</h3>
+<pre><code class = "html">&lt;head&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+</code></pre>
+          <ul>
+            <li>Can be used from multiple pages.</li>
+            <li>Reduced file size &amp; bandwidth.</li>
+            <li>Easier to maintain in larger projects.</li>
+          </ul>
+        </section>
+
+        <!-- CSS Selector Intro -->
+        <section>
+          <h3>CSS: The Selector</h3>
+	  <pre><code class="css">selector {
+  property: value;
+  property: value;
+}</code></pre>
+	 <p>The selector is used to select which elements in the HTML page will be given the styles inside the curly braces.</p>
+
+        </section>
+
+        <!-- Selectors elements-->
+        <section>
+          <h3>Types of Selectors: Element</h3>
+<pre><code class="css">p {
+  property: value;
+}
+</code></pre>
+          <p>Selects all paragraph elements.</p>
+<pre><code class="css">img {
+  property: value;
+}
+</code></pre>
+          <p>Selects all image elements.</p>
+        </section>
+        
+        <!-- Plunker -->
+        <section>
+          <h3>Plunker</h3>
+          <p>http://plnkr.co/</p>
+        </section>
+
+        <!-- IDs and Classes-->
+        <section>
+          <h3>Reusing code</h3>
+          <p>As a general coding principle, <strong>D</strong>on't <strong>R</strong>epeat <strong>Y</strong>ourself.
+          <p>To reuse CSS, we use IDs and classes.</p>
+        </section>
+
+        <section>
+          <h3>IDs vs. Classes</h3>
+          <p><strong><code>id</code></strong> -- Applies to <em>one</em> element on a webpage, i.e., a webpage only has one footer.<br />
+          In CSS, you mark an <code>id</code> selector with a "<code>#</code>".</p>
+          <hr>
+          <p><strong><code>class</code></strong> -- Lots of elements can have the same class, i.e., There can be many warnings on one webpage.<br />
+          In CSS, you mark a <code>class</code> selector with a "<code>.</code>".</p>
+        </section>
+        <section>
+          <h3>Selector: <code>id</code></h3>
+<pre><code class = "css">#site-footer {
+  property: value;
+}
+</code></pre>
+          <p>Selects the one element on the page with an <code>id</code> of <code>site-footer</code>.</p>
+<pre><code class="html">&lt;p id="site-footer"&gt;Copyright 2016&lt;/p&gt;
+</code></pre>
+          <p>^ The associated HTML</p>
+        </section>
+
+        <!-- Selectors Class-->
+        <section>
+          <h3>Selector: <code>class</code></h3>
+<pre><code class = "css">.warning {
+  color: red;
+}
+</code></pre>
+          <p>Selects all elements with a <code>class</code> of <code>warning</code>.</p>
+<pre><code class="html xml">&lt;p class="warning"&gt;Run away!&lt;/p&gt;
+</code></pre>
+          <p>^ The associated HTML</p>
+        </section>
+
+        <!-- Exercise-->
+        <section>
+          <h3>Let's develop it</h3>
+          <ul>
+            <li>Add an <code>id</code> and a <code>class</code> to a your HTML</li>
+            <li>Add CSS rules to target these elements</li>
+          </ul>
+        </section>
+
+          <!-- Cascading-->
+        <section>
+          <h3>The CSS Cascade</h3>
+          <p>What styles will each paragraph receive?</p>
+<pre><code class = "css">p {
+  color: orange;
+  font-family: sans-serif;
+}
+.info-paragraph {
+  color: blue;
+  background-color: orange;
+}
+#main-paragraph {
+  font-weight: bold;
+  color: green;
+}
+</code></pre>
+<pre><code class="html xml">&lt;p&gt;Paragraph&lt;/p&gt;
+&lt;p class="info-paragraph"&gt;Paragraph&lt;/p&gt;
+&lt;p class="info-paragraph" id="main-paragraph"&gt;Paragraph&lt;/p&gt;
+</code></pre>
+        </section>
+        <section>
+          <h3>Cascading priority: Importance</h3>
+          <p>Your browser assigns different priorities to CSS depending on the type of selector.</p>
+          <ol>
+            <li>Inline CSS - <strong>Most Important</strong></li>
+            <li>ID selector</li>
+            <li>Class selector</li>
+            <li>Element selector - <strong>Least Important</strong></li>
+          </ol>
+        </section>
+        <section>
+          <h3>Cascading priority: Specificity</h3>
+          <p>Your browser also assigns priority based on the specificity of the selection. More specific selectors have higher priority.</p>
+<pre><code class = "css">.main .sale .clearance p { /* Most specific */
+  color: red;
+}
+.header .title p {
+  color: green;
+}
+.footer p { /* Least specific */
+  color: blue;
+}
+</code></pre>
+        </section>
+        <section>
+          <h3>Cascading priority: Source order</h3>
+          <p>The tie-breaker is rule order. Rules lower in the file overwrite rules higher in the file</p>
+<pre><code class = "css">a {
+  background-color: yellow;
+}
+a {
+  background-color: teal;
+}
+a { /* This rule wins */
+  background-color: black;
+}
+</code></pre>
+        </section>
+
+        <section>
+          <h3>Debugging Cascades in Chrome Dev Tools</h3>
+          <a href="instructor-resources/inclass_cascade.html" target="_blank"><img src="img/chromedevtools_cascade.png" alt="Screenshot of CSS rule overrides in Chrome Dev Tools"></a>
+        </section>
+
+        <!-- Find more selectors -->
+        <section>
+          <h3>More CSS Selectors</h3>
+          <p>There are many more ways to select elements in different ways. Read more:</p>
+          <ul>
+            <li><a href="https://css-tricks.com/how-css-selectors-work/" target="_blank">CSS Tricks</a></li>
+            <li><a href="http://learn.shayhowe.com/advanced-html-css/complex-selectors/#common-selectors" target="_blank">Advanced - Common Selectors</a></li>
+            <li><a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">W3 Schools - CSS Selectors</a></li>
+          </ul>
+        </section>
+
+        <!-- Properties-->
+        <section>
+          <h3>More CSS Properties</h3>
+          <p>Many CSS properties have self-explanatory names:</p>
+          <ul>
+            <li>background-color</li>
+            <li>font-family</li>
+            <li>font-size</li>
+            <li>color</li>
+            <li>width</li>
+            <li>height</li>
+          </ul>
+          <p>Find more at: <a href="https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference" target="_blank">MDN: All CSS properties</a></p>
+        </section>
+
+        <section>
+          <h2>Close Out</h2>
+          <ul>
+            <li>What is HTML? How does it work?</li>
+            <li>What is CSS? What does it do?</li>
+            <li>What technical struggles did you overcome?</li>
+            <li>What's your favorite HTML tag or CSS property?</li>
+          </ul>
+          <hr>
+          <br>
+          <br>
+          <p><a href="index.html#/1">Return to Table of Contents</a></p>
+        </section>
+
+      </div><!-- Close slides -->
+
+      <footer>
+        <div class="copyright">
+          Intro to HTML & CSS (2-day) -- Girl Develop It San Francisco --
+          <a rel="license" href="../common/http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+    </div><!-- Close reveal -->
+
+    <script src="../common/lib/js/head.min.js"></script>
+    <script src="../common/js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../common/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          //{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../common/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../common/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../common/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../common/plugin/zoom-js/zoom.js', async: true },
+          { src: '../common/plugin/notes/notes.js', async: true },
+          //{ src: '../common/plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
