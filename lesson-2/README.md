@@ -36,3 +36,23 @@ pairs:
 ### Example and Excercise
 * Size, Color, and position
 * moana.html
+
+*NOTE: This lesson took two class periods. Think about breaking up.*
+Goals for Session 2
+- Review CSS/HTML
+- WHITEBOARD: Containers div
+    - start with analogy of moving a bunch of things, and how containers help gather them to make the task easier.
+    
+- Go to Starting Point Plnkr
+- CSS: Selector, Property and Value
+    selector {
+        property: value;
+        property: value;
+    }
+
+    body {
+        color: yellow;
+        background-color: black;
+    }
+- pull out body and img styles in plnkr
+
