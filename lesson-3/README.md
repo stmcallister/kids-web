@@ -1,7 +1,7 @@
 # Kids Web
 ## Lesson 3: Intro to JavaScript
 
-NOTE: Keep concepts focused on client-side JavaScript for now
+*NOTE: Keep concepts focused on client-side JavaScript*
 
 Using the book [JavaScript for Kids](https://www.nostarch.com/javascriptforkids) book as a reference.
 
@@ -33,9 +33,3 @@ The school chromebooks have the browser console disabled. So, we'll be using [ht
         }
     }
     drawCats(10);
-
-### If There is Time: Buttons
-
-Not necessarily part of the originally planned lesson, but was getting asked how buttons worked with JavaScript. So, went over this:
-
-Show alert() box on a button. This was fun. `<button onclick="alert('Hello World')">`
