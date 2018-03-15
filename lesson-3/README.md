@@ -26,7 +26,7 @@ The school chromebooks have the browser console disabled. So, we'll be using [ht
 
 
 ### drawCats() example
-
+    // Draw as many cats as you want!
     var drawCats = function(numberOfCats) {
         for (var i = 0; i < numberOfCats; i++) {
             console.log(i + ".) =^.^= "); 
