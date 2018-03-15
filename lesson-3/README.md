@@ -18,11 +18,15 @@ Sites with Cool Uses of JavaScript
 ### What can you do with code?
 The school chromebooks have the browser console disabled. So, we'll be using [https://jsconsole.com/](https://jsconsole.com/) 
 
-### Let's try some match
+### Let's try some math
 
 * 3 + 4
 * 5 + 30
 * 98210 - 43214
+* 14 * 8
+* 222/3
+* 5 + 6 * 8 / 2 - 10
+
 
 
 ### drawCats() example
