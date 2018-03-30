@@ -3,7 +3,7 @@
 
 *NOTE: Keep concepts focused on client-side JavaScript*
 
-Using the book [JavaScript for Kids](https://www.nostarch.com/javascriptforkids) book as a reference.
+Using the book [JavaScript for Kids](https://www.nostarch.com/javascriptforkids) book as a lesson plan reference.
 
 ### What is JavaScript?
 Examples: posting messages on Facebook, or most Email web sites heavily use JavaScript
