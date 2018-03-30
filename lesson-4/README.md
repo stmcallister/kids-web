@@ -5,9 +5,13 @@
 Information stored in the computer program
 
 ### Basic Data Types
-Strings
-Numbers
-Booleans
+
+* Strings
+  * "Mrs. Friedman's 3rd Grade Class"
+* Numbers
+  * 1 2 3 4 5
+* Booleans
+  * true;
 
 #### Numbers and Operators
 Show examples of various math operations. Be sure to show `+`,`-`,`*`,`/`
@@ -20,7 +24,7 @@ Lets you give names to values
     var harryP;
     undefined
 
-Setting variables
+#### Setting variables
 
     var harryAge = 11;
     var ronAge = 11;
@@ -36,3 +40,6 @@ Setting variables
     // see the change in totalAge
     totalAge
 
+#### If there's time
+
+Find the number of seconds in an hour. In a day. In a year.
