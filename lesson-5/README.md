@@ -23,25 +23,6 @@ Note: Talk about starting at zero
 * Math.floor -- rounds to nearest whole number
 
 ### Magic 8-Ball
-    <doctype !html>
-    <html>
-      <head>
-        <title>Magic Fortune</title>
-      </head>
-      <body>
-        <script>
-          var fortunes = [
-            "That sounds good",
-            "Yes, you should definitely do that",
-            "I'm not sure that's a great idea",
-            "Maybe not today?",
-            "Computer says no"
-          ];
-        </script>
-        <h1>Magic Fortune</h1>
-        <button 
-          onclick="document.getElementById('response').innerHTML = 
-          fortunes[Math.floor(Math.random() * fortunes.length)];">Ask me</button>
-        <p id="response"></p>
-      </body>
-    </html>
+This activity will show how reference different elements in an array by randomly selecting each element to provide a fortune. 
+
+The code can be found in the [fortunes.html](fortunes.html) file.
