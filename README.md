@@ -7,3 +7,4 @@ When we got into JavaScript we used [jsconsole](https://jsconsole.com/).
 * **lesson-2** -- [intro to css](lesson-2/README.md)
 * **lesson-3** -- [intro to js](lesson-3/README.md)
 * **lesson-4** -- [basic data types and variables](lesson-4/README.md)
+* **lesson-5** -- [arrays and random](lesson-5/README.md)
